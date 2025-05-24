@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+/* @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *)); */
+
+body {
+    @apply bg-twine-50 dark:bg-twine-950;
+    @apply font-poppins;
+}
+
+@theme {
+  --font-poppins: Poppins, sans-serif;
+  /* --font-arabic: "Amiri Quran", serif; */
+  --font-arabic: "Scheherazade New", serif;
+  --color-twine-50: #f8f5ee;
+  --color-twine-100: #efe7d2;
+  --color-twine-200: #e0cea8;
+  --color-twine-300: #cfac75;
+  --color-twine-400: #c09150;
+  --color-twine-500: #b07d42;
+  --color-twine-600: #986336;
+  --color-twine-700: #7a4a2e;
+  --color-twine-800: #673e2c;
+  --color-twine-900: #59362a;
+  --color-twine-950: #331b15;
+}
